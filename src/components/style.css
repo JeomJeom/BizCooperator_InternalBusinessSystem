@@ -1,0 +1,37 @@
+.container {
+  color: #282c34;
+  margin-top: 100px;
+  width: 80%;
+}
+
+h3:after
+{
+    content:' ';
+    display:block;
+    border:2px solid black;
+}
+
+.form-group label {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.form-control {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+
+.form-option{
+  margin-top: 10px;
+  width: 200px;
+}
+
+.form-date{
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+

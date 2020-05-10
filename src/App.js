@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import PersistentDrawer from "./components/PersistentDrawer/persistentDrawer";
+import StaffList from "./components/staff-list.component";
+import EditStaff from "./components/edit-staff.component";
+import CreateStaff from "./components/create-staff.component";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <PersistentDrawer />
+        <Route path="/0" exact component={StaffList} />
+        <Route path="/edit/:id" component={EditStaff} />
+        <Route path="/1" component={CreateStaff} />
+    </Router>
   );
 }
 

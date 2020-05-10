@@ -1,18 +1,13 @@
 This project was bootstrapped with Create React App.
-#BizCooperator System
-##Introduction
+# BizCooperator System
+## Introduction
 BizCooperator System is a internal business system to join different departments database into one system. It is still on the process of development. New features will be added gradually.
 
 ## Key Programming Language Utilized
-JavaScript
-ECMAScript6
-HTML
-CSS
-JSX
+JavaScript, ECMAScript6, HTML, CSS, JSX
 
 ## Framework Used
-React 
-- Material-UI
+React - Material-UI
 
 ## Database Used
 MongoDB Atlas - AWS
